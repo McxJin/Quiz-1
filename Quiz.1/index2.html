@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        .column {
+            float: left;
+            padding: 5px;
+        }
+        .left {
+            width: 15%;
+            background-color: #aaa;
+        }
+        .center {
+            width: 65%;
+            background-color: #bbb;
+        }
+        .right {
+            width: 15%;
+            background-color: #ccc;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left">
+    <button class="center-text"><a href="https://www.google.com/" target="_blank">Page1</a></button>
+    <button class="center-text"><a href="https://www.google.com/" target="_blank">Page2</a></button>
+    <button class="center-text"><a href="https://www.google.com/" target="_blank">Page3</a></button>
+    <button class="center-text"><a href="https://www.google.com/" target="_blank">Page4</a></button>
+  </div>
+  <div class="column center">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio repellat nulla molestiae, necessitatibus dolorem repellendus neque ex quibusdam quis omnis sequi tempora autem iste. Dignissimos provident excepturi dolores laudantium ipsa possimus quis ducimus?</p>
+  </div>
+  <div class="column right">
+    <img src="./020e2994c263eb14994858257f56dbdc_971593211243485622.png"  alt="Person">
+  </div>
+</div>
+
+</body>
+</html>
